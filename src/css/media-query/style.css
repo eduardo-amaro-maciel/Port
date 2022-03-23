@@ -1,0 +1,360 @@
+@charset "UTF-8";
+
+:root {
+    /* cores */
+    --cor-laranja: rgb(229, 149, 0);
+    --cor-preto: rgb(25, 24, 28);
+    --cor-branco: #ffffff;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    /* sessão 1 */
+
+    header nav {
+        display: flex;
+    }
+
+    header nav span {
+        font-size: 40px;
+        margin: 0;
+        margin-left: 3px;
+    }
+
+    header ul {
+        display: flex;
+    }
+
+    header ul li {
+        margin-right: 12px;
+        font-size: 14px;
+    }
+
+    i {
+        font-size: 16px;
+        margin: 2px;
+    }
+
+    #sessao-1 {
+        padding: 15px;
+    }
+
+    /* sessão 2 */
+
+    .botao-contate-me {
+        width: 130px;
+        height: 50px;
+        font-size: 14px;
+        margin: 20px 0 20px 0;
+    }
+
+    #sessao-2 div {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 5px;
+    }
+
+    img[src="src/images/minha-foto.jpg"] {
+        height: 210px;
+        width: 210px;
+    }
+
+    #sessao-2 div p {
+        padding: 5px;
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+        margin: 5px 0 0 0;
+    }
+
+    /* sessão 3 */
+
+    #sessao-3 #container-de-projetos {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0px 20px 0 20px;
+    }
+
+    .descricao-projetos {
+        width: 100%;
+        margin: 0;
+        margin-top: 15px;
+    }
+
+    .descricao-projetos p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .descricao-projetos a {
+      margin: 0 auto;
+    }
+    
+    /* sessão 4 */
+
+    #sessao-4 div {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+        height: 130px;
+    }
+
+    #sessao-4 div .botao-contate-me {
+        margin: 0;
+        background-color: var(--cor-preto);
+        margin-top: 5px;
+        color: var(--cor-branco);
+    }
+
+    #sessao-4 a {
+        margin-top: 32px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    /* sessão 1 */
+
+    header nav {
+        display: flex;
+    }
+
+    header nav span {
+        font-size: 40px;
+        margin: 0;
+        margin-left: 20px;
+    }
+
+    header ul {
+        display: flex;
+    }
+
+    header ul li {
+        margin-right: 16px;
+        font-size: 19px;
+    }
+
+    i {
+        font-size: 23px;
+        margin: 2px;
+    }
+
+    #sessao-1 {
+        padding-left: 20px;
+    }
+
+    /* sessão 2 */
+
+    .botao-contate-me {
+        width: 130px;
+        height: 50px;
+        font-size: 14px;
+        margin: 20px 0 20px 0;
+    }
+
+    #sessao-2 div {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 5px;
+    }
+
+    img[src="src/images/minha-foto.jpg"] {
+        height: 230px;
+        width: 230px;
+    }
+
+    #sessao-2 div p {
+        padding: 5px;
+        width: 70%;
+        font-size: 14px;
+        text-align: center;
+        margin: 5px 0 0 0;
+    }
+
+    /* sessão 3 */
+
+    #sessao-3 #container-de-projetos {
+        width: 100%;
+        max-width: 668px;
+        flex-direction: column;
+        margin: 0;
+        padding: 0px 20px 0 20px;
+    }
+
+    .descricao-projetos {
+        width: 100%;
+        margin: 0;
+        margin-top: 15px;
+    }
+
+    .descricao-projetos p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .descricao-projetos a {
+      margin: 0 auto;
+    }
+    
+    /* sessão 4 */
+
+    #sessao-4 div {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 130px;
+    }
+
+    #sessao-4 div .botao-contate-me {
+        margin: 0;
+        background-color: var(--cor-preto);
+        margin-top: 5px;
+        color: var(--cor-branco);
+    }
+
+    #sessao-4 a {
+        margin-top: 32px;
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* sessão 1 */
+
+    header nav {
+        display: flex;
+    }
+
+    header nav span {
+        font-size: 52px;
+        margin: 0;
+        margin-left: 20px;
+    }
+
+    header ul {
+        display: flex;
+    }
+
+    header ul li {
+        margin-right: 28px;
+        font-size: 23px;
+    }
+
+    i {
+        font-size: 43px;
+        margin: 2px;
+    }
+
+    #sessao-1 {
+        padding-left: 20px;
+    }
+
+    /* sessão 2 */
+
+    .botao-contate-me {
+        width: 130px;
+        height: 50px;
+        font-size: 14px;
+        margin: 20px 0 20px 0;
+    }
+
+    #sessao-2 div {
+        margin: 0;
+        padding: 5px 35px 0 35px;
+        justify-content: center;
+    }
+
+    img[src="src/images/minha-foto.jpg"] {
+        height: 300px;
+        width: 300px;
+        margin-right: 5px;
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    #sessao-2 div p {
+        width: 300px;
+        font-size: 16px;
+        margin: 0 0 0 5px;
+    }
+
+    /* sessão 3 */
+
+    #sessao-3 #container-de-projetos {
+        width: 100%;
+        max-width: 700px;
+        flex-direction: column;
+        margin: 0;
+        padding: 0px 20px 0 20px;
+    }
+
+    .descricao-projetos {
+        width: 100%;
+        margin: 0;
+        margin-top: 15px;
+    }
+
+    .descricao-projetos p {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .descricao-projetos a {
+      margin: 0 auto;
+    }
+    
+    /* sessão 4 */
+
+    #sessao-4 div {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 130px;
+    }
+
+    #sessao-4 div .botao-contate-me {
+        margin: 0;
+        background-color: var(--cor-preto);
+        margin-top: 5px;
+        color: var(--cor-branco);
+    }
+
+    #sessao-4 a {
+        margin-top: 32px;
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1400px) {
+
+    /* sessão 3 */
+
+    #sessao-3 #container-de-projetos {
+        width: 100%;
+        margin: 0;
+        padding: 0px 20px 0 20px;
+    }
+
+    .descricao-projetos {
+        max-width: 440px;
+        max-height: 340px;
+        margin: 20px 5px 5px 5px;
+    }
+
+    .descricao-projetos p {
+        font-size: 1.4rem;
+    }
+}

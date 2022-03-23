@@ -1,0 +1,367 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Source+Sans+Pro:wght@300;900&display=swap');
+
+:root {
+    /* cores */
+    --cor-laranja: rgb(229, 149, 0);
+    --cor-preto: rgb(25, 24, 28);
+    --cor-branco: #ffffff;
+
+
+    /* fontes */
+    --fonte-source-sans-pro: "Source Sans Pro";
+}
+
+/* scroll personalizado */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--cor-preto);
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--cor-preto);
+}
+  
+*::-webkit-scrollbar-thumb {
+    background-color: var(--cor-laranja);
+    border-radius: 10px;
+    border: 1px solid var(--cor-preto);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    color: var(--cor-branco);
+    background-color: var(--cor-laranja);
+}
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: #ffffff; /* cor do background que vai ocupar o body */
+    z-index:999; /* z-index para jogar para frente e sobrepor tudo */
+}
+
+#preloader .inner {
+    position: absolute;
+    top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--cor-branco); 
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--cor-preto);
+}
+
+/* sessao 1 header */
+
+nav {   
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-branco);
+}
+
+nav span {
+    font-size: 5rem;
+    margin-left: 45px;
+    font-weight: 900;
+    text-transform: capitalize;
+    transition: .2s;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    color: var(--cor-preto);
+    list-style: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-right: 45px;
+    font-family: var(--fonte-source-sans-pro);
+    transition: .2s;
+}
+
+li a:hover {
+    color: var(--cor-laranja);
+    transition: .2s;
+    text-decoration: underline;
+}
+
+.container-da-sessao {
+    width: 100%;
+}
+
+#sessao-1 {
+    height: 84vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 45px;
+    justify-content:  center;
+    overflow: hidden;
+}
+
+#sessao-1 h1 {
+    font-family: var(--fonte-source-sans-pro);
+    font-size: 8vw;
+    margin-bottom: -2vw;
+}
+
+#sessao-1 span {
+    font-family: var(--fonte-source-sans-pro);
+    font-size: 4vw;
+}
+
+i {
+    font-size: 55px;
+    margin: 10px;
+    transition: .3s
+}
+
+i:hover {
+    transform: scale(1.25);
+    transition: .3s;
+    color: var(--cor-laranja);
+}
+
+.titulo-da-sessao {
+    font-size: 30px;
+    text-decoration: underline;
+    font-family: var(--fonte-source-sans-pro);
+    font-weight: 200;
+    margin: 10px;
+}
+
+/* sessao 2 sobre */
+
+#sessao-2 {
+    background-color: var(--cor-preto);
+}
+
+#sessao-2 h1 {
+    color: var(--cor-branco);
+}
+
+#sessao-2  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img[src="src/images/minha-foto.jpg"] {
+    height: 410px;
+}
+
+#sessao-2 div {
+    display: flex;
+    margin: 30px;
+}
+
+#sessao-2 div p {
+    width: 460px;
+    font-size: 23px;
+    font-family: var(--fonte-source-sans-pro);
+    margin-left: 10px;
+    color: var(--cor-branco);
+}
+
+.botao-contate-me {
+    height: 65px;
+    width: 165px;
+    background-color: var(--cor-branco);
+    color: var(--cor-preto);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 300;
+    transition: .3s;
+    margin: 20px;
+}
+
+.botao-contate-me:hover {
+    background-color: var(--cor-laranja);
+    transition: .3s;
+}
+
+/* sessao 3 projetos */
+
+#sessao-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sessao-3 #container-de-projetos {
+    display: flex;
+    margin: 20px;
+}
+
+#sessao-3 .botao-contate-me {
+    background-color: var(--cor-preto);
+    color: var(--cor-branco);
+    border: 1px solid var(--cor-preto);
+    transition: .3s;
+}
+
+#sessao-3 .botao-contate-me:hover {
+    background-color: var(--cor-laranja);
+    transition: .3s;
+}
+
+.descricao-projetos {
+    padding: 10px;
+    margin: 10px;
+    width: 445px;
+    height: 345px;
+    border: 2px solid var(--cor-preto);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .3s
+}
+
+.descricao-projetos:hover {
+    transition: .3s;
+    transform: rotate(2deg);
+    background-color: rgb(252, 242, 242);
+}
+
+.descricao-projetos h1 {
+    margin: 0 auto;
+    font-family: var(--fonte-source-sans-pro);
+    font-weight: 300;
+}
+
+.descricao-projetos P {
+    margin-top: 14px;
+    flex-grow: 1;
+    font-family: var(--fonte-source-sans-pro);
+    font-size: 24px;
+}
+
+.descricao-projetos a {
+    font-family: var(--fonte-source-sans-pro);
+    font-size: 18px;
+    color: var(--cor-laranja);
+    text-decoration: underline;
+}
+
+#imagem-paralax {
+    background-image: url("../images/imagem-fundo-paralax.jpg");
+    width: 100%;
+    height: 450px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* sessao 4 contato */
+
+#sessao-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sessao-4 div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+label {
+    font-size: 20px;
+    font-family: var(--fonte-source-sans-pro);
+    margin: 7px 0 0 0;
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+    width: 620px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+#email {
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 5px;
+}
+
+#email:focus, textarea:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    border: 3px solid var(--cor-laranja);
+}
+
+#sessao-4 div .botao-contate-me{
+    background-color: var(--cor-preto);
+    color: var(--cor-branco);
+    margin: 5px 0 0 0;
+}
+
+
+#sessao-4 div button:hover {
+    transition: .3s;
+    background-color: var(--cor-laranja);
+    color: var(--cor-preto);
+}
+
+#sessao-4 a {
+    margin-bottom: 35px;
+    cursor: pointer;
+    font-family: var(--fonte-source-sans-pro);
+    font-size: 24px;
+    text-decoration: underline;
+    color: var(--cor-laranja);
+}
+
+footer {
+    height: 80px;
+    background-color: var(--cor-preto);
+    width: 100%;
+    font-family: var(--fonte-source-sans-pro);
+    color: var(--cor-branco);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
