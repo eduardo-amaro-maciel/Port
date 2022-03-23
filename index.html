@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meu primeiro portifolio feito em html">
+    <meta name="author" content="Eduardo Amaro Maciel">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="Portfolio, Eduardo Amaro Maciel, HTML">
+
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/animations/style.css">
+    <link rel="stylesheet" href="src/media-query/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/afed8db424.js" crossorigin="anonymous" defer></script>
+    <script src="src/js/jquery-3.6.0.min.js" defer></script>
+    <script src="src/js/loader/pre-loader.js" defer></script>
+
+    <title>Eduardo Amaro Maciel</title>
+</head>
+<body>
+    <!-- pre loader gif --> 
+
+    <div id="preloader">
+        <div class="inner">
+           <img src="src/js/loader/loader.gif" alt="loarder da pagina">
+        </div>
+    </div>
+
+    <!-- sessao 1 header --> 
+
+    <header id="inicio">
+        <nav>
+            <span>E</span>
+            <ul>
+                <li><a href="#sessao-2">SOBRE</a></li>
+                <li><a href="#sessao-3">PROJETOS</a></li>
+                <li><a href="#sessao-4">CONTATE-ME</a></li>
+            </ul>
+        </nav>
+
+        <section class="container-da-sessao" id="sessao-1">      
+            <h1>eduardo amaro maciel</h1>
+            <span>WEB DESIGNER</span>
+            <div>
+                <a target="_blank" href="https://www.linkedin.com/in/eduardo-amaro-maciel-a7b899203/"><i class="fa-brands fa-linkedin"></i></a> 
+                <a target="_blank" href="https://github.com/eduardo-amaro-maciel"><i class="fa-brands fa-github"></i></a> 
+                <a target="_blank" href="https://www.instagram.com/eduamaro.m/"><i class="fa-brands fa-instagram-square"></i></a>
+            </div>           
+        </section>
+    </header>
+
+    <!-- sessao 2 sobre -->
+
+    <section class="container-da-sessao" id="sessao-2">        
+        <h1 class="titulo-da-sessao">SOBRE</h1>
+        <div>
+            <img src="assets/images/minha-foto.jpg" alt="minha foto">
+            <p>
+                Atualmente estou fazendo o curso tecnólogo de Sistemas Para Internet pela Universidade do Vale do Itajaí (2021). 
+                Sempre fui um entusiasta da tecnologia e adoro resolver problemas reais em forma de código. Tenho um grande 
+                interesse de participar do processo criativo em desenvolvimento de softwares, visando sempre adquirir conhecimento 
+                e auxiliar a equipe no processo. Venho até o momento me especializando na área de desenvolvimento web com HTML, CSS, 
+                JavaScript, NodeJS, MySQL, ReactJS, dentre outras ferramentas mais voltadas para a parte Front-End onde possuo maiores conhecimentos.
+            </p>
+        </div>
+        <button class="botao-contate-me">CONTATE-ME</button>
+    </section>
+
+    <!-- sessao 3 projetos -->
+
+    <section class="container-da-sessao" id="sessao-3">
+        <h1 class="titulo-da-sessao">PROJETOS</h1>
+        <div id="container-de-projetos">
+            <div class="descricao-projetos">
+                <h1>PROJETO 1</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum molestiae consequuntur, culpa provident animi doloremque alias? Dolorum ullam culpa esse vero. At quos pariatur non illo eos illum est ipsam?</p>
+                <a href="">Ver no GitHub</a>
+            </div>
+    
+            <div class="descricao-projetos">
+                <h1>PROJETO 1</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum molestiae consequuntur, culpa provident animi doloremque alias? Dolorum ullam culpa esse vero. At quos pariatur non illo eos illum est ipsam?</p>
+                <a href="">Ver no GitHub</a>
+            </div>
+    
+            <div class="descricao-projetos">
+                <h1>PROJETO 1</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum molestiae consequuntur, culpa provident animi doloremque alias? Dolorum ullam culpa esse vero. At quos pariatur non illo eos illum est ipsam?</p>
+                <a href="">Ver no GitHub</a>
+            </div>
+        </div>
+        
+        <button class="botao-contate-me">CONTATE-ME</button>
+    </section>
+
+    <!-- paralax -->
+
+    <div id="imagem-paralax"></div>
+   
+    <!-- sessao 4 contato -->
+
+    <section class="container-da-sessao" id="sessao-4">
+        <h1 class="titulo-da-sessao">CONTATE-ME</h1>
+        <div>
+            <label for="email">email:</label>
+            <input type="email" name="#" id="email">
+
+            <label for="menssagem">menssagem:</label>
+            <textarea name="#" id="menssagem" cols="30" rows="10"></textarea>
+            
+            <button class="botao-contate-me">ENVIAR</button>
+        </div>
+        <a href="#inicio">Voltar ao inicio</a>
+    </section>
+
+    <!-- rodapé -->
+    
+    <footer>
+        &copy;2022 Eduardo Amaro Maciel
+    </footer>
+
+    <noscript>
+        <p>Seu navegador não suporta JavaScript</p>
+    </noscript>
+</body>
+</html>
