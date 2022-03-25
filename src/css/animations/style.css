@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body {
+    overflow-x: hidden;
+}
+
+#sessao-1 h1 {
+    animation: nomeAoLado .6s ease-in;
+    animation-delay: .4s;
+}
+
+#sessao-1 span {
+    animation: descricaoParaCima .6s ease-in;
+    animation-delay: .4s;
+}
+
+@keyframes nomeAoLado {
+    from {
+        opacity: 0;
+        transform: translate(-150px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes descricaoParaCima {
+    from {
+        opacity: 0;
+        transform: translate(150px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
