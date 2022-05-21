@@ -229,6 +229,7 @@ img[src="src/images/minha-foto.jpg"] {
 .botao-contate-me:hover {
     background-color: var(--cor-laranja);
     transition: .3s;
+    color: var(--cor-branco);
 }
 
 /* sessao 3 projetos */
