@@ -116,6 +116,18 @@ li a:hover {
     text-decoration: underline;
 }
 
+.texto-nav-menu {
+    background-image: linear-gradient(transparent 0%, transparent 90%, hotpink 90%, hotpink 100%);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    transition: 300ms;
+}
+
+.texto-nav-menu:hover {
+    background-size: 100% 100%;
+    background-position-x: left;
+}
+
 .container-da-sessao {
     width: 100%;
 }
