@@ -7,6 +7,7 @@
     --cor-laranja: rgb(229, 149, 0);
     --cor-preto: rgb(25, 24, 28);
     --cor-branco: #ffffff;
+    --cor-vermelho: rgba(255, 0, 47, 0.678);
 
 
     /* fontes */
@@ -70,13 +71,6 @@ body {
     background-color: var(--cor-branco); 
 }
 
-a, a:visited {
-    text-decoration: none;
-}
-
-a:visited {
-    color: var(--cor-preto);
-}
 
 /* sessao 1 header */
 
@@ -86,6 +80,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: var(--cor-branco);
+    position: fixed;
 }
 
 nav span {
@@ -102,25 +97,30 @@ ul {
 }
 
 li {
-    color: var(--cor-laranja);
     list-style: none;
     font-size: 24px;
     text-transform: uppercase;
     margin-right: 45px;
     font-family: var(--fonte-source-sans-pro);
-    transition: .2s;
+    
 }
 
-li a:hover {
-    transition: .2s;
-    text-decoration: underline;
+a {
+    color: var(--cor-laranja);
+    text-decoration: none;
 }
+
+a:visited {
+    color: var(--cor-laranja);
+}
+
 
 .texto-nav-menu {
-    background-image: linear-gradient(transparent 0%, transparent 90%, hotpink 90%, hotpink 100%);
+    background-image: linear-gradient(transparent 0%, transparent 90%, var(--cor-vermelho) 90%, var(--cor-vermelho) 100%);
+    background-size: 0 100%;
     background-repeat: no-repeat;
     background-position-x: right;
-    transition: 300ms;
+    transition: background-size 450ms;
 }
 
 .texto-nav-menu:hover {
@@ -129,6 +129,7 @@ li a:hover {
 }
 
 .container-da-sessao {
+    padding: 85px 0;
     width: 100%;
 }
 
@@ -150,6 +151,7 @@ li a:hover {
 #sessao-1 span {
     font-family: var(--fonte-source-sans-pro);
     font-size: 4vw;
+    color: var(--cor-preto);
 }
 
 i {
@@ -162,7 +164,7 @@ i {
 i:hover {
     transform: scale(1.25);
     transition: .3s;
-    color: rgba(255, 0, 47, 0.678);
+    color: var(--cor-vermelho);
 }
 
 .titulo-da-sessao {
@@ -269,13 +271,14 @@ img[src="src/images/minha-foto.jpg"] {
 
 .descricao-projetos:hover {
     transition: .3s;
-    transform: rotate(2deg);
+    transform: rotate(1deg);
     background-color: rgb(252, 242, 242);
 }
 
 .descricao-projetos h1 {
     margin: 0 auto;
     font-family: var(--fonte-source-sans-pro);
+    color: var(--cor-vermelho);
     font-weight: 300;
 }
 
